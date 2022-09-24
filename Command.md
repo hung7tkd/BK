@@ -1,76 +1,62 @@
-##Các lệnh trong git:
+## Các lệnh trong git:
 
-##git config:
+## git config:
 
-###Hai cài đặt quan trọng của git là user name và email
+### Hai cài đặt quan trọng của git là user name và email
 
-##git init:
+## git init:
 
-###Dùng để tạo một kho lưu trữ (repository) và 1 dự án (project) mới
+### Dùng để tạo một kho lưu trữ (repository) và 1 dự án (project) mới
 
-##git add:
+## git add:
 
-###Thêm các file vào stage/index. Một số cách khác có thể sử dụng git add bằng cách thêm toàn bộ thư 
+### Thêm các file vào stage/index. Một số cách khác có thể sử dụng git add bằng cách thêm toàn bộ thư mục, các file cụ thể
 
-mục, các file cụ thể
+## git commit:
 
-##git commit:
+### Dùng để ghi lại những thay đổi được thực hiện đối với file vào local repository. Để dễ dàng theo dõi commit và mỗi commit sẽ có một mã ID theo dõi duy nhất
 
-###Dùng để ghi lại những thay đổi được thực hiện đối với file vào local repository. Để dễ dàng theo dõi
+## git status:
 
-commit và mỗi commit sẽ có một mã ID theo dõi duy nhất
+### Sử dụng lệnh này để trả về trạng thái tại kho lưu trữ (repository). git status sẽ trả về nhánh làm việc hiện tại của bạn. Nếu một file nằm trong stagging area nhưng không được commit thì nó sẽ hiển thị với git status. Hoặc nếu không có thay đổi nào no sẽ trả về nothing to commit, working directory clean
 
-##git status:
+## git branch:
 
-###Sử dụng lệnh này để trả về trạng thái tại kho lưu trữ (repository). git status sẽ trả về nhánh làm
+### Để xác định nhánh nào trong local repository, thêm hoặc xóa một nhánh mới
 
-việc hiện tại của bạn. Nếu một file nằm trong stagging area nhưng không được commit thì nó sẽ hiển thị
- 
-với git status. Hoặc nếu không có thay đổi nào no sẽ trả về nothing to commit, working directory clean
+## git checkout:
 
-##git branch:
+### Sử dụng git checkoutđể chuyển đổi các chi nhánh
 
-###Để xác định nhánh nào trong local repository, thêm hoặc xóa một nhánh mới
+## git merge:
 
-##git checkout:
+### Hợp nhất các nhánh với nhau, sử dụng git merge để kết hợp các thau đổi từ nhánh này sang nhánh khác
 
-###Sử dụng git checkoutđể chuyển đổi các chi nhánh
+## git remote:
 
-##git merge:
+### Để kết nối repository với kho lưu trữ từ xa
 
-###Hợp nhất các nhánh với nhau, sử dụng git merge để kết hợp các thau đổi từ nhánh này sang nhánh khác
+## git clone:
 
-##git remote:
+### Để tạo một bản sao làm việc cục bộ với kho lưu trữ từ xa. Sử dụng git clone để sao chép và tải kho lưu trữ về máy tính. Sao chép giống với Git init khi làm việc với kho lưu trữ từ xa
 
-###Để kết nối repository với kho lưu trữ từ xa
+## git pull:
 
-##git clone:
+### Chạy git pull để tải phiên bản mới nhất của repository. Thao tác với lệnh này kéo các thay đổi từ kho lưu trữ từ xa sang máy tính cục bộ
 
-###Để tạo một bản sao làm việc cục bộ với kho lưu trữ từ xa. Sử dụng git clone để sao chép và tải kho
+## git push:
 
-lưu trữ về máy tính. Sao chép giống với Git init khi làm việc với kho lưu trữ từ xa
+### Dùng để gửi commit đến kho lưu trữ từ xa. git push sử dụng 2 tham số: kho lưu trữ từ xa và nhánh mà push dành cho
 
-##git pull:
+## git stash:
 
-###Chạy git pull để tải phiên bản mới nhất của repository. Thao tác với lệnh này kéo các thay đổi từ
- 
-kho lưu trữ từ xa sang máy tính cục bộ
+### Dùng để lưu các thay đổi được thực hiện nó chưa ở trạng thái commit đến repository
 
-##git push:
+## git log:
 
-###Dùng để gửi commit đến kho lưu trữ từ xa. git push sử dụng 2 tham số: kho lưu trữ từ xa và nhánh mà
+### Để hiển thị lịch sử commit theo thời gian cho một repository
 
-push dành cho
+## git reset:
 
-##git stash:
-
-###Dùng để lưu các thay đổi được thực hiện nó chưa ở trạng thái commit đến repository
-
-##git log:
-
-###Để hiển thị lịch sử commit theo thời gian cho một repository
-
-##git reset:
-
-###Dùng để quay về một điểm commit nào đó, đồng thời xóa lịch sử của các commit trước nó
+### Dùng để quay về một điểm commit nào đó, đồng thời xóa lịch sử của các commit trước nó
 
